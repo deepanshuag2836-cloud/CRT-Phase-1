@@ -77,3 +77,75 @@ int main() {
     cout << max_number;
     return 0;
 }
+
+//Problem num 5
+
+#include <iostream>
+using namespace std;
+
+int main()
+{int daynumber;
+cin>>daynumber;
+
+switch(daynumber){
+    case 1:
+    cout<<"monday";
+    break;
+    case 2:
+    cout<<"tuseday";
+    break;
+    case 3:
+    cout<<"wednesday";
+    break;
+    case 4:
+    cout<<"thursday";
+    break;
+    case 5:
+    cout<<"friday";
+    break;
+    case 6:
+    cout<<"saturday";
+    break;
+    case 7:
+    cout<<"sunday";
+    break;
+    default:
+    cout<<"enter a valid number";
+    
+    
+}
+}
+
+// Problem -- 6
+// Customer support IVR system 
+// 1 -- for support 
+// 2 -- for billing 
+// 3 -- Technical issues
+// 4 -- Talk to the Agent
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cin >> choice;
+    
+    switch(choice) {
+        case 1: 
+        cout <<" Transferring call to the support team...";
+        break;
+        case 2:
+        cout << "Transferring call to the billing and accounts department...";
+         break;
+        case 3:
+        cout << "Connecting call to the Technical team...";
+         break;
+        case 4:
+        cout << "Please wait while we are connecting your call to an agent...";
+         break;
+        default:
+        cout << " Enter a valid choice...";
+        
+    }
+    return 0;
+}
