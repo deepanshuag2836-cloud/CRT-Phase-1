@@ -1,0 +1,27 @@
+// leetcode 70
+// climbing stairs 
+
+class Solution {
+public:
+
+int starisclimb(int n) {
+
+    // base condition  
+
+    if(n == 0 || n == 1) {
+        return 1;
+    }
+    if(n == 2) {
+        return 2;
+    }
+
+    // logic
+
+    return starisclimb(n-1) + starisclimb(n-2);
+}
+
+   int climbStairs(int n) {
+    return starisclimb(n);
+    }
+};
+
