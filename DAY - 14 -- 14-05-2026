@@ -1,4 +1,4 @@
-//problem -- 1
+// problem -- 1
 // link list node new create in shift head
 
 #include <iostream>
@@ -41,4 +41,23 @@ int main(){
    display();
    return 0;
    }
+
+// leetcode 206
+// reverse linked list
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+
+        while(curr != nullptr){
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+};
 
