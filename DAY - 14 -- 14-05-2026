@@ -1,0 +1,44 @@
+//problem -- 1
+// link list node new create in shift head
+
+#include <iostream>
+using namespace std;
+
+class Node{
+    public:
+    
+    int data;
+    Node* next;
+    
+    Node(int new_data){
+        this->data=new_data;
+        this->next=nullptr;
+    }
+};
+
+Node*head=nullptr;
+ void insertAtHead(int data){
+    Node*newNode=new Node(data);
+    newNode->next=head;
+    head=newNode;
+}
+
+void display(){
+    Node*temp=head;
+    while(temp!=nullptr){
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
+    cout<<"Null";
+}
+
+int main(){
+   head=new Node(10);
+   head->next=new Node(20);
+   head->next->next=new Node(30);
+   head->next->next->next=new Node(40);
+   insertAtHead(5);
+   display();
+   return 0;
+   }
+
